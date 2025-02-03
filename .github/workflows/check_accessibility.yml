@@ -10,6 +10,7 @@ jobs:
   check-accessibility:
     runs-on: ubuntu-latest
     steps:
+      #charge les fichiers du projet
       - name: Checkout code
         uses: actions/checkout@v4
       

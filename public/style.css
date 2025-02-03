@@ -1,4 +1,4 @@
-.btn {
+button {
     background: blue;
     color: white;
     padding: 10px;
@@ -6,6 +6,6 @@
 }
 
 #contact {
-    color: #aaa;
+    color: #474242;
     background: #fff;
 }

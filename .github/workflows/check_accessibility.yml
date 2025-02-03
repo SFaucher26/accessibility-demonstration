@@ -10,16 +10,16 @@ jobs:
   check-accessibility:
     runs-on: ubuntu-latest
     steps:
-      -name: Checkout code
-       uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      -name: Start Node server
-       run:
+      - name: Start Node server
+        run:
         npm install
         node serveur.js & sleep 5 # Attendre que le serveur démarre
 
-      -name: Install Pa11y
-       run: npm install -g pa11y-ci
+      - name: Install Pa11y
+        run: npm install -g pa11y-ci
 
-      -name: Run accessibility tests
-       run: pa11y-ci --config pa11y-ci-json
+      - name: Run accessibility tests
+        run: pa11y-ci --config pa11y-ci-json

@@ -19,8 +19,7 @@ jobs:
           node-version: 18
 
       - name: Install Dependencies
-        run:
-        npm install
+        run: npm install
 
       - name: Start Node server
         run: |
